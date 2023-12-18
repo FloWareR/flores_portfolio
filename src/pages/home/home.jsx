@@ -16,7 +16,7 @@ function Home() {
           </div>
           <div className='w-[60%] flex flex-col'>
             <div className='w-full h-[90%] flex flex-col items-center justify-center'>
-              <img className='w-[25%] ml-3' src={Logo_white} alt="" />
+              <img className='w-[25%]' src={Logo_white} alt="" />
             <div className='w-full flex-col justify-center'>
              <h1 className='w-full text-[4rem] flex justify-center'>Hello! I'm a</h1> 
               <div className='flex justify-center'>
