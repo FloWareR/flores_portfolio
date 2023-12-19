@@ -11,15 +11,15 @@ function Home() {
   return (
     <>
       <div className='flex h-full w-full'>
-          <div className='w-[20%] flex justify-center'>
+          <div className='w-[20%] flex justify-center navbar'>
             <Navbar/>
           </div>
           <div className='w-[60%] flex flex-col'>
             <div className='w-full h-[90%] flex flex-col items-center justify-center'>
-              <img className='w-[25%]' src={Logo_white} alt="" />
+              <img className='sm:w-[25%] w-[70%]' src={Logo_white} alt="" />
             <div className='w-full flex-col justify-center'>
-             <h1 className='w-full text-[4rem] flex justify-center'>Hello! I'm a</h1> 
-              <div className='flex justify-center'>
+             <h1 className='w-full sm:text-[4rem] text-[1rem] flex justify-center'>Hello! I'm a</h1> 
+              <div className='flex  justify-center'>
                  <TypeAnim/>
                 </div>
             </div> 
@@ -33,6 +33,9 @@ function Home() {
           </div>
       </div>
       <div className="triangle-container"></div>
+
+
+      {}
     </>
   )
 }

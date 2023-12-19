@@ -2,7 +2,7 @@
 function Navbar() {
   return (
     <>
-      <nav className="text-xs md:text-4xl p-6 ">
+      <nav className="text-xs sm:text-4xl sm:p-6 p-4 ">
         <ul>
           <li>
             <a className='HOME decoration-0 text-gray-500 hover:text-white' href="">HOME</a> 

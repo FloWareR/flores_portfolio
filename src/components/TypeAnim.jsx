@@ -1,5 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 
+
 const TypeAnim = () => {
   return (
     <TypeAnimation
@@ -12,7 +13,7 @@ const TypeAnim = () => {
       ]}
       wrapper="span"
       speed={25}
-      style={{ fontSize: '4rem', display: 'inline-block', color: '#c78903'}}
+      className='text-anim'
       repeat={Infinity}
     />
   );

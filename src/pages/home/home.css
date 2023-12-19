@@ -16,3 +16,52 @@
   background: linear-gradient(to top, #222222, #313030);
   z-index: -1;
 }
+
+.text-anim{
+  color: orange;
+  font-size: 4rem;
+}
+
+
+@media only screen and (max-width: 449px) and (min-width: 1px) {
+  .text-anim {
+    font-size: 1rem;
+  }
+  .navbar{
+    visibility: hidden
+  }
+  .navbar-overlay{
+      visibility: visible
+  }
+}
+
+
+@media only screen and (max-width: 599px) and (min-width: 450px) {
+  .text-anim {
+    font-size: 1.5rem;
+  }
+  .navbar{
+    visibility: hidden
+  }
+  .navbar-overlay{
+    visibility: visible
+}
+}
+@media only screen and (max-width: 899px) and (min-width: 600px) {
+  .text-anim {
+    font-size: 2rem;
+  }
+  .navbar{
+    visibility: visible;
+  }
+  .navbar-overlay{
+    visibility: hidden
+}
+}
+
+@media only screen and (min-width: 900px) {
+
+  .navbar-overlay{
+    visibility: hidden
+}
+}
