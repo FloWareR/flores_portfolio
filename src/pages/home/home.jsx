@@ -12,10 +12,13 @@ import Hamburger from 'hamburger-react'
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
+
   
+
   const menuToggle = () =>{
     setIsOpen((open) => !open);
   };
+
   let menu
   let mask
   
@@ -38,12 +41,14 @@ function Home() {
         {menu}
         {mask}
       <div className='flex h-full w-full'>
-      <div onClick={menuToggle}    className=' w-[48px] h-[48px] navbar-overlay decoration-0 max-w-[20px] z-10'>
-        <Hamburger direction='right' color={`${isOpen ? 'black' : "white"}`} />
-      </div>
-          <div className={`w-[20%] flex justify-center navbar navbar-overlay text-4xl ${isOpen ? 'open' : ''}`}>
-            <Navbar/>
 
+          <div className={`w-[20%] flex justify-center text-4xl`}>
+          <div onClick={menuToggle}    className=' max-w-[48px] max-h-[48px] navbar-overlay decoration-0 z-10'>
+              <Hamburger direction='right' color={`${isOpen ? 'black' : "white"}`} />
+          </div>
+            <div className='navbar'>
+              <Navbar/> 
+            </div>
           </div>
           <div className='w-[60%] flex flex-col'>
             <div className='w-full h-[90%] flex flex-col items-center justify-center'>

@@ -26,18 +26,24 @@
 
 
 
-@media only screen and (max-width: 449px) and (min-width: 1px) {
+@media only screen and (max-width: 349px) and (min-width: 1px) {
   .text-anim {
     font-size: 1rem;
   }
   .navbar{
-    visibility: hidden
+    display: none;
   }
   
 }
-
-
-
+@media only screen and (max-width: 449px) and  (min-width: 200px) {
+  .text-anim {
+    font-size: 1.5rem;
+  }
+  .navbar{
+    display: none;
+  }
+  
+}
 
 
 @media only screen and (max-width: 449px) and  (min-width: 350px) {
@@ -48,8 +54,18 @@
     display: none;
   }
   
-
 }
+
+@media only screen and (max-width: 449px) and  (min-width: 350) {
+  .text-anim {
+    font-size: 1.5rem;
+  }
+  .navbar{
+    display: none;
+  }
+  
+}
+
 @media only screen and (max-width: 599px) and (min-width: 450px) {
   .text-anim {
     font-size: 1.5rem;
