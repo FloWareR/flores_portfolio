@@ -6,7 +6,7 @@ import GithubLogo from '../assets/icons/github_logo.svg'
 function Links() {
   return (
     <div>
-      <ul className='sm:p-6 inline-flex gap-4'>
+      <ul className='sm:p-8 inline-flex gap-4'>
         <li>
           <a target='_blank' href="https://www.linkedin.com/in/rafael-flores-85a5a4289/"><img className='min-w-[40px] 'src={LinkedinLogo}/></a>
         </li>
