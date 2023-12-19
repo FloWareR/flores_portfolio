@@ -1,5 +1,5 @@
 import './home.css'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo_white from '../../assets/images/logo-white.png'
 import Navbar from '../../components/Navbar.jsx'
 import Footer from '../../components/Footer.jsx'
@@ -14,39 +14,34 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   
+  useEffect(() => {
+  
+  }, []);
 
+  
   const menuToggle = () =>{
-    setIsOpen((open) => !open);
+    const navButton = document.querySelector('.navbar-overlay')
+    const nav = document.querySelector('#mobilenav')
+    const visibility = nav.getAttribute('data-visible');
+    if(visibility =='false'){
+      nav.setAttribute('data-visible', true)
+    }
+    else{
+      nav.setAttribute('data-visible', false)
+    }
   };
 
-  let menu
-  let mask
-  
-  if (isOpen){
-    menu = 
-    <div className='fixed bg-white opacity-100 text-xl top-0 left-0 w-4/5 h-full transition-all z-10 shadow'>
-      <ul>hola holah oasoijdajd</ul>
-    </div>
-
-    mask =
-    <div className='bg-black opacity-50	 fixed top-0 left-0 w-full h-full z-10 transition-all' onClick={menuToggle}>
-
-    </div>
-  }
 
 
 
   return (
     <>
-        {menu}
-        {mask}
       <div className='flex h-full w-full'>
-
-          <div className={`w-[20%] flex justify-center text-4xl`}>
+          <div className='w-[20%] flex justify-center text-4xl side-container'>
           <div onClick={menuToggle}    className=' max-w-[48px] max-h-[48px] navbar-overlay decoration-0 z-10'>
               <Hamburger direction='right' color={`${isOpen ? 'black' : "white"}`} />
           </div>
-            <div className='navbar'>
+            <div className=''>
               <Navbar/> 
             </div>
           </div>

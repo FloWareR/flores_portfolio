@@ -16,15 +16,42 @@
   background: linear-gradient(to top, #222222, #313030);
   z-index: -1;
 }
+.triangle-container2 {
+  position: fixed;
+  bottom: -50%;
+  right: 0%;
+  width: 100%;
+  height: 150%;
+  transform: translateX(-75%) rotate(-20deg);
+  background: linear-gradient(to top, #b7b7b7, #4b4b4b);
+  z-index: -1;
+}
 
 .text-anim{
   color: orange;
   font-size: 4rem;
 }
 
-
-
-
+.navbar-overlay{
+  z-index: 2;
+}
+#mobilenav{
+  position:fixed;
+  inset: 0 0 0 0;
+  background-color: #969696;
+  list-style: none;
+  opacity: 0;
+  transform: translateX(-120%);
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+}
+ #mobilenav a{
+  padding: 0.65rem 3rem;
+ }
+#mobilenav[data-visible='true']{
+  transform: translateX(0%);
+  opacity: 1;
+}
 
 @media only screen and (max-width: 349px) and (min-width: 1px) {
   .text-anim {
@@ -33,18 +60,28 @@
   .navbar{
     display: none;
   }
-  
+
+  .address{
+    display: none;
+  }
+  .address2{
+    display: block;
+  }
+
 }
+
 @media only screen and (max-width: 449px) and  (min-width: 200px) {
   .text-anim {
     font-size: 1.5rem;
   }
+
+  .address{
+    display: none;
+  }
   .navbar{
     display: none;
   }
-  
 }
-
 
 @media only screen and (max-width: 449px) and  (min-width: 350px) {
   .text-anim {
@@ -53,17 +90,9 @@
   .navbar{
     display: none;
   }
-  
-}
-
-@media only screen and (max-width: 449px) and  (min-width: 350) {
-  .text-anim {
-    font-size: 1.5rem;
-  }
-  .navbar{
+  .address{
     display: none;
   }
-  
 }
 
 @media only screen and (max-width: 599px) and (min-width: 450px) {
@@ -71,12 +100,12 @@
     font-size: 1.5rem;
   }
   .navbar{
-    visibility: visible
-  }
-  .navbar-overlay{
-    display:none
+    display: none;
   }
 
+  .address2{
+    display: none;
+  }
 }
 @media only screen and (max-width: 899px) and (min-width: 600px) {
   .text-anim {
@@ -88,7 +117,9 @@
   .navbar-overlay{
     display:none
   }
-
+  .address2{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -96,5 +127,7 @@
   .navbar-overlay{
     display:none
   }
-
+  .address2{
+    display: none;
+  }
 }
