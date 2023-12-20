@@ -49,7 +49,7 @@ function Home() {
             <div className='w-full h-[90%] flex flex-col items-center justify-center'>
               <img className='sm:w-[25%] w-[70%]' src={Logo_white} alt="" />
             <div className='w-full flex-col justify-center'>
-             <h1 className='w-full sm:text-[4rem] text-[1rem] flex justify-center'>Hello! I'm a</h1> 
+             <h1 className='w-full  sm:text-[4rem] am flex justify-center'>Hello! I'm a</h1> 
               <div className='flex  justify-center'>
                  <TypeAnim/>
                 </div>

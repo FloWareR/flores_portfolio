@@ -6,16 +6,16 @@ function Navbar() {
       <nav className="text-xs sm:text-3xl sm:p-6 p-4 navbar">
         <ul>
           <li>
-            <a className='HOME decoration-0 text-gray-500 hover:text-white' href="">Home</a> 
+            <a className=' decoration-0 text-gray-500 hover:text-white' href="/">Home</a> 
           </li>
           <li>
-            <a className='HOME decoration-0 text-gray-500 hover:text-white' href="">About me</a> 
+            <a className=' decoration-0 text-gray-500 hover:text-white' href="/about">About me</a> 
           </li>  
           <li>
-            <a className='HOME decoration-0 text-gray-500 hover:text-white' href="">Work</a> 
+            <a className=' decoration-0 text-gray-500 hover:text-white' href="/projects">Projects</a> 
           </li>
           <li>
-            <a className='HOME decoration-0 text-gray-500 hover:text-white' href="">Contact</a> 
+            <a className=' decoration-0 text-gray-500 hover:text-white' href="/contact">Contact</a> 
           </li>
         </ul>
       </nav>
@@ -32,7 +32,7 @@ function Navbar() {
             <a className='text-[2rem]' href="">About me</a> 
           </li>  
           <li className='p-2 text-right '>
-            <a className='text-[2rem]' href="">Work</a> 
+            <a className='text-[2rem]' href="">Projects</a> 
           </li>
           <li className='p-2 text-right'>
             <a className='text-[2rem] ' href="">Contact</a> 

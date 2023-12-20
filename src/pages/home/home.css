@@ -55,8 +55,11 @@
 
 @media only screen and (max-width: 349px) and (min-width: 1px) {
   .text-anim {
-    font-size: 1rem;
-  }
+  font-size: 1rem
+ }
+ .i-am{
+  font-size: 1rem;
+ }
   .navbar{
     display: none;
   }
@@ -70,30 +73,22 @@
 
 }
 
-@media only screen and (max-width: 449px) and  (min-width: 200px) {
-  .text-anim {
-    font-size: 1.5rem;
-  }
-
-  .address{
-    display: none;
-  }
-  .navbar{
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 449px) and  (min-width: 350px) {
   .text-anim {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .am{
+    font-size: 1.3rem;
+   }
+
+  .address{
+    display: none;
   }
   .navbar{
     display: none;
   }
-  .address{
-    display: none;
-  }
 }
+
 
 @media only screen and (max-width: 599px) and (min-width: 450px) {
   .text-anim {
